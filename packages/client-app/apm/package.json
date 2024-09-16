@@ -6,6 +6,12 @@
     "url": "https://github.com/nylas/nylas-mail"
   },
   "dependencies": {
-    "atom-package-manager": "1.1.1"
-  }
+    "atom-package-manager": "2.0.0",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
