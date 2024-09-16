@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - atom-package-manager > asar-require > asar > minimatch:
+        patched: '2024-09-16T21:54:34.148Z'
+        id: 'npm:minimatch:20160620'
+        path: atom-package-manager > asar-require > asar > minimatch
